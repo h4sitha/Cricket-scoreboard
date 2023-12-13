@@ -60,7 +60,7 @@ p {
     margin: 0;
     /* border: 1px solid rgb(35, 35, 35); */
     padding: 10px 20px;
-    width: 500px;
+    width: 250px;
     text-align: center;
 }
 
@@ -80,4 +80,13 @@ p {
 
 #btn4 {
     background-color: rgb(208, 255, 208);
+}
+
+.score-overs {
+    display: flex;
+    align-items: center;
+}
+
+#overs {
+    font-size: 30px;
 }

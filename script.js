@@ -3,43 +3,67 @@ let bigScreen = document.getElementById("big-screen")
 let inningsScore = document.getElementById("score")
 let inningsWickets = document.getElementById("wickets")
 
+let oversCompleted = document.getElementById("overs-completed")
+let currentOverBalls = document.getElementById("balls-completed")
 
-console.log(inningsWickets)
+let totalBallsBowled = 0
+
+console.log(totalBallsBowled)
 
 
 function one(){
-    bigScreen.innerText = "1"
-    inningsScore.innerText = +inningsScore.innerText + 1
+    bigScreen.textContent = "1"
+    inningsScore.textContent = +inningsScore.textContent + 1
+    totalBallsBowled += 1
+    currentOverBalls.textContent = totalBallsBowled%6
+    oversCompleted.textContent = Math.trunc(totalBallsBowled/6)
 }
 
 function two(){
-    bigScreen.innerText = "2"
-    inningsScore.innerText = +inningsScore.innerText + 2
+    bigScreen.textContent = "2"
+    inningsScore.textContent = +inningsScore.textContent + 2
+    totalBallsBowled += 1
+    currentOverBalls.textContent = totalBallsBowled%6
+    oversCompleted.textContent = Math.trunc(totalBallsBowled/6)
 }
 
 function three(){
-    bigScreen.innerText = "3"
-    inningsScore.innerText = +inningsScore.innerText + 3
+    bigScreen.textContent = "3"
+    inningsScore.textContent = +inningsScore.textContent + 3
+    totalBallsBowled += 1
+    currentOverBalls.textContent = totalBallsBowled%6
+    oversCompleted.textContent = Math.trunc(totalBallsBowled/6)
 }
 
 function four(){
-    bigScreen.innerText = "FOUR!"
-    inningsScore.innerText = +inningsScore.innerText + 4
+    bigScreen.textContent = "FOUR!"
+    inningsScore.textContent = +inningsScore.textContent + 4
+    totalBallsBowled += 1
+    currentOverBalls.textContent = totalBallsBowled%6
+    oversCompleted.textContent = Math.trunc(totalBallsBowled/6)
 }
 
 function six(){
-    bigScreen.innerText = "SIX!!!"
-    inningsScore.innerText = +inningsScore.innerText + 6
+    bigScreen.textContent = "SIX!!!"
+    inningsScore.textContent = +inningsScore.textContent + 6
+    totalBallsBowled += 1
+    currentOverBalls.textContent = totalBallsBowled%6
+    oversCompleted.textContent = Math.trunc(totalBallsBowled/6)
 }
 
 function wicket(){
-    bigScreen.innerText = "OUT!"
-    inningsWickets.innerText = +inningsWickets.innerText + 1
+    bigScreen.textContent = "OUT!"
+    inningsWickets.textContent = +inningsWickets.textContent + 1
+    totalBallsBowled += 1
+    currentOverBalls.textContent = totalBallsBowled%6
+    oversCompleted.textContent = Math.trunc(totalBallsBowled/6)
 }
 
 function reset(){
-    bigScreen.innerText = ""
-    inningsScore.innerText = 0
-    inningsWickets.innerText = 0
+    bigScreen.textContent = ""
+    inningsScore.textContent = 0
+    inningsWickets.textContent = 0
+    totalBallsBowled = 0
+    currentOverBalls.textContent = 0
+    oversCompleted.textContent = 0
 }
-
