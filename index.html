@@ -10,20 +10,20 @@
 <body>
 
     <h1>Cricket Scoreboard</h1>
-    <div id="big-screen">0</div>
+    <div id="big-screen"></div>
 
     <p><span id="score">0</span> / <span id="wickets">0</span></p>
     
     <div class="buttons">
         <div class="first-btns">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
         </div>
-        <button id="btn4">4</button>
-        <button id="btn6">6</button>
-        <button id="wicket-btn">Wicket</button>
-        <button id="reset-btn">Reset</button>
+        <button id="btn4" onclick="four()">4</button>
+        <button id="btn6" onclick="six()">6</button>
+        <button id="wicket-btn" onclick="wicket()">Wicket</button>
+        <button id="reset-btn" onclick="reset()">Reset</button>
     </div>
 
     <script src="script.js"></script>
