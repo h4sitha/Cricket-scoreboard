@@ -1,0 +1,78 @@
+* {
+    /* border: 1px dotted black; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.big-screen {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(35, 35, 35);
+    border: 4px solid rgb(175, 25, 25);
+    border-radius: 20px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.first-btns {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.first-btns button {
+    flex-grow: 1;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid rgb(35, 35, 35);
+    border-radius: 5px;
+}
+
+p {
+    font-size: 50px;
+    margin: 0;
+    /* border: 1px solid rgb(35, 35, 35); */
+    padding: 10px 20px;
+    width: 500px;
+    text-align: center;
+}
+
+#reset-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: lightgray;
+}
+
+#wicket-btn {
+    background-color: lightcoral;
+}
+
+#btn6 {
+    background-color: lightgreen;
+}
+
+#btn4 {
+    background-color: rgb(208, 255, 208);
+}
